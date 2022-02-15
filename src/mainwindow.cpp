@@ -493,8 +493,8 @@ void MainWindow::buildBidsTemplate() {
 	// path/to/CurrentStudy/sub-%p/ses-%s/eeg/sub-%p_ses-%s_task-%b[_acq-%a]_run-%r_eeg.xdf
 
 	// Make sure the BIDS required fields are full.
-	if (ui->lineEdit_participant->text().isEmpty()) { ui->lineEdit_participant->setText("P001"); }
-	if (ui->lineEdit_session->text().isEmpty()) { ui->lineEdit_session->setText("S001"); }
+	if (ui->lineEdit_participant->text().isEmpty()) { ui->lineEdit_participant->setText("001"); }
+	if (ui->lineEdit_session->text().isEmpty()) { ui->lineEdit_session->setText("001"); }
 	if (ui->input_blocktask->currentText().isEmpty()) {
 		ui->input_blocktask->setCurrentText("Default");
 	}
